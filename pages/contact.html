@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Marc Schwimmklub</title>
+    <meta name="description" content="Contact Marc Schwimmklub to book a trial, ask about programs, or learn more about membership." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="../index.html" class="brand" aria-label="Marc Schwimmklub home">
+          <span class="brand-mark">M</span>
+          <span class="brand-text">
+            <strong>Marc</strong>
+            <small>Schwimmklub</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="events.html">Events</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="button button-primary nav-cta">Join now</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">🌙 Dark</button>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <span class="section-label">Contact</span>
+          <h1>Start your next swim chapter with us.</h1>
+          <p>Book a trial, ask about memberships, or speak with our team about the right program for you.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <h3>Send a message</h3>
+            <form class="contact-form">
+              <label>
+                Full Name
+                <input type="text" placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="you@example.com" />
+              </label>
+              <label>
+                Program
+                <select>
+                  <option>Junior Academy</option>
+                  <option>Performance Squad</option>
+                  <option>Masters Swimming</option>
+                  <option>Open Water</option>
+                </select>
+              </label>
+              <label>
+                Message
+                <textarea rows="5" placeholder="Tell us a little about your goals"></textarea>
+              </label>
+              <button type="submit" class="button button-primary">Send inquiry</button>
+            </form>
+          </div>
+
+          <div class="contact-card info-panel-card">
+            <h3>Club details</h3>
+            <ul class="contact-info">
+              <li><strong>Email:</strong> hello@marcschwimmklub.com</li>
+              <li><strong>Phone:</strong> +49 000 0000</li>
+              <li><strong>Location:</strong> Swim Center, City Harbor</li>
+              <li><strong>Opening Hours:</strong> Mon–Sat, 6:00–20:00</li>
+            </ul>
+            <div class="map-box">
+              <span>Club location</span>
+              <strong>Near the waterfront sports center</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="../index.html" class="brand footer-brand">
+            <span class="brand-mark">M</span>
+            <span class="brand-text">
+              <strong>Marc</strong>
+              <small>Schwimmklub</small>
+            </span>
+          </a>
+        </div>
+        <p>© <span id="year"></span> Marc Schwimmklub. Swim stronger together.</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
