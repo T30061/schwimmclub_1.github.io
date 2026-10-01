@@ -60,6 +60,98 @@ body.dark-mode {
   background: linear-gradient(180deg, #081722 0%, #0e1c2a 100%);
 }
 
+body.dark-mode .feature-panel,
+body.dark-mode .mini-card,
+body.dark-mode .trust-card,
+body.dark-mode .program-card,
+body.dark-mode .day-block,
+body.dark-mode blockquote,
+body.dark-mode .info-box,
+body.dark-mode .inspiration-card,
+body.dark-mode .contact-card,
+body.dark-mode .legal-card,
+body.dark-mode .event-card,
+body.dark-mode .schedule-table-wrap,
+body.dark-mode .features-wrap,
+body.dark-mode .info-panel,
+body.dark-mode .badge,
+body.dark-mode .main-nav,
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form select,
+body.dark-mode .contact-form textarea {
+  background: rgba(13, 31, 45, 0.9);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+body.dark-mode .info-panel,
+body.dark-mode .badge,
+body.dark-mode .features-wrap,
+body.dark-mode .mini-card,
+body.dark-mode .inspiration-card,
+body.dark-mode .contact-card,
+body.dark-mode .legal-card,
+body.dark-mode .event-card,
+body.dark-mode .schedule-table-wrap,
+body.dark-mode .program-card,
+body.dark-mode .trust-card,
+body.dark-mode .day-block,
+body.dark-mode blockquote,
+body.dark-mode .info-box,
+body.dark-mode .feature-panel {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .feature-list li,
+body.dark-mode .contact-info,
+body.dark-mode .legal-list,
+body.dark-mode .info-panel small,
+body.dark-mode .panel-label,
+body.dark-mode .trust-card p,
+body.dark-mode .program-card p,
+body.dark-mode .legal-card p,
+body.dark-mode .legal-card li,
+body.dark-mode .event-card p,
+body.dark-mode .info-box p,
+body.dark-mode .map-box span,
+body.dark-mode .day-block small,
+body.dark-mode .features-wrap span,
+body.dark-mode .hero-metrics span,
+body.dark-mode .brand-text small,
+body.dark-mode .site-footer p,
+body.dark-mode .main-nav a,
+body.dark-mode .main-nav,
+body.dark-mode .contact-form label,
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+  color: var(--muted);
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form select,
+body.dark-mode .contact-form textarea {
+  background: rgba(9, 23, 34, 0.9);
+  border-color: rgba(186, 214, 237, 0.18);
+}
+
+body.dark-mode .badge,
+body.dark-mode .info-panel,
+body.dark-mode .features-wrap,
+body.dark-mode .mini-card,
+body.dark-mode .feature-panel,
+body.dark-mode .inspiration-card,
+body.dark-mode .contact-card,
+body.dark-mode .legal-card,
+body.dark-mode .event-card,
+body.dark-mode .schedule-table-wrap,
+body.dark-mode .program-card,
+body.dark-mode .day-block,
+body.dark-mode blockquote,
+body.dark-mode .info-box,
+body.dark-mode .trust-card {
+  backdrop-filter: blur(12px);
+}
+
 img {
   max-width: 100%;
   display: block;
