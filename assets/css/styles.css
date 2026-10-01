@@ -347,6 +347,40 @@ body.dark-mode .button-secondary {
   color: var(--ink);
 }
 
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.34rem;
+  border-radius: 999px;
+  background: rgba(121, 217, 248, 0.12);
+  border: 1px solid rgba(13, 95, 199, 0.18);
+}
+
+.lang-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lang-btn:hover {
+  transform: translateY(-1px);
+}
+
+.lang-btn.active {
+  background: var(--toggle-bg);
+  color: var(--toggle-fg);
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
