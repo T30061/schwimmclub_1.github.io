@@ -1,4 +1,4 @@
-# Marc Schwimmklub Website
+# ASKÖ Swimclub Neusiedl Website
 
 ## Project order
 
