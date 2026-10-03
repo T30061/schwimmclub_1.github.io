@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>ASKÖ Swimclub Neusiedl | Swim with Purpose</title>
     <meta
       name="description"
@@ -21,7 +24,9 @@
       <header class="site-header">
         <div class="container nav-wrap">
           <a href="#top" class="brand" aria-label="ASKÖ Swimclub Neusiedl home">
-            <span class="brand-mark">A</span>
+            <span class="brand-logo" aria-hidden="true">
+              <span class="brand-mark">A</span>
+            </span>
             <span class="brand-text">
               <strong>ASKÖ</strong>
               <small>Swimclub Neusiedl</small>
@@ -38,8 +43,8 @@
           </nav>
 
           <div class="nav-actions">
-            <a href="pages/contact.html" class="button button-secondary nav-signin">Sign in</a>
-            <a href="pages/contact.html" class="button button-primary nav-cta">Join now</a>
+            <a href="pages/contact.html" class="button button-secondary nav-signin" data-i18n="signin">Sign in</a>
+            <a href="pages/contact.html" class="button button-primary nav-cta" data-i18n="join">Join now</a>
           </div>
           <div class="lang-switcher" aria-label="Language selector">
             <button class="lang-btn active" type="button" data-lang="de" aria-label="Deutsch">🇩🇪 DE</button>
@@ -55,34 +60,34 @@
       </header>
 
       <main id="top">
-        <section class="hero">
+        <section class="hero" data-reveal>
           <div class="container hero-grid">
             <div class="hero-copy">
-              <div class="eyebrow">Built for speed. Built for community.</div>
-              <h1>Swim with purpose. Grow beyond limits.</h1>
-              <p>
+              <div class="eyebrow" data-i18n="heroEyebrow">Luxury swim coaching in Linz</div>
+              <h1 data-i18n="heroTitle">Swim with purpose. Grow beyond limits.</h1>
+              <p data-i18n="heroText">
                 ASKÖ Swimclub Neusiedl brings together competitive swimmers, rising talents,
                 and active adults in a club culture built on energy, discipline, and
-                belonging.
+                belonging — right here in Linz.
               </p>
 
               <div class="hero-actions">
-                <a href="#programs" class="button button-primary">Explore programs</a>
-                <a href="#about" class="button button-secondary">Why our club</a>
+                <a href="#programs" class="button button-primary" data-i18n="heroPrimary">Explore programs</a>
+                <a href="#about" class="button button-secondary" data-i18n="heroSecondary">Why our club</a>
               </div>
 
               <ul class="hero-metrics" aria-label="Club metrics">
                 <li>
                   <strong>12+</strong>
-                  <span>Years coaching</span>
+                  <span data-i18n="metricYears">Years coaching</span>
                 </li>
                 <li>
                   <strong>450+</strong>
-                  <span>Members active</span>
+                  <span data-i18n="metricMembers">Members active</span>
                 </li>
                 <li>
                   <strong>95%</strong>
-                  <span>Member retention</span>
+                  <span data-i18n="metricRetention">Member retention</span>
                 </li>
               </ul>
             </div>
@@ -100,38 +105,38 @@
           </div>
         </section>
 
-        <section class="features-bar">
+        <section class="features-bar" data-reveal>
           <div class="container features-wrap">
             <div>
-              <span>Swim school</span>
-              <strong>Learn to swim</strong>
+              <span data-i18n="featureSwimSchool">Swim school</span>
+              <strong data-i18n="featureLearn">Learn to swim</strong>
             </div>
             <div>
-              <span>Performance</span>
-              <strong>Competitive squads</strong>
+              <span data-i18n="featurePerformance">Performance</span>
+              <strong data-i18n="featureSquads">Competitive squads</strong>
             </div>
             <div>
-              <span>Fitness</span>
-              <strong>Masters & adult lanes</strong>
+              <span data-i18n="featureFitness">Fitness</span>
+              <strong data-i18n="featureMasters">Masters & adult lanes</strong>
             </div>
             <div>
-              <span>Community</span>
-              <strong>Events & culture</strong>
+              <span data-i18n="featureCommunity">Community</span>
+              <strong data-i18n="featureEvents">Events & culture</strong>
             </div>
           </div>
         </section>
 
-        <section id="about" class="section about">
+        <section id="about" class="section about" data-reveal>
           <div class="container about-grid">
             <div class="section-copy">
-              <span class="section-label">About the club</span>
-              <h2>A new generation of swim club energy.</h2>
-              <p>
+              <span class="section-label" data-i18n="aboutLabel">About the club</span>
+              <h2 data-i18n="aboutTitle">A new generation of swim club energy.</h2>
+              <p data-i18n="aboutText1">
                 We combine technical coaching, inclusive community, and a strong athlete
                 mindset to help every swimmer move forward — whether they are taking
                 their first strokes or chasing podium performances.
               </p>
-              <p>
+              <p data-i18n="aboutText2">
                 Every lane is built around progression, confidence, and belonging. Our
                 coaches help swimmers improve with purpose and enjoy the process along
                 the way.
@@ -139,106 +144,106 @@
             </div>
 
             <div class="about-cards">
-              <article class="mini-card accent">
+              <article class="mini-card accent" data-reveal>
                 <span>01</span>
-                <h3>Structured progression</h3>
-                <p>Clear training pathways for age groups, adults, and performance squads.</p>
+                <h3 data-i18n="mini1Title">Structured progression</h3>
+                <p data-i18n="mini1Text">Clear training pathways for age groups, adults, and performance squads.</p>
               </article>
               <article class="mini-card">
                 <span>02</span>
-                <h3>Expert coaches</h3>
-                <p>Technical feedback, race preparation, and confidence-focused development.</p>
+                <h3 data-i18n="mini2Title">Expert coaches</h3>
+                <p data-i18n="mini2Text">Technical feedback, race preparation, and confidence-focused development.</p>
               </article>
               <article class="mini-card">
                 <span>03</span>
-                <h3>Club spirit</h3>
-                <p>Friendly, motivating, and energizing environment for every member.</p>
+                <h3 data-i18n="mini3Title">Club spirit</h3>
+                <p data-i18n="mini3Text">Friendly, motivating, and energizing environment for every member.</p>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section trust-section">
+        <section class="section trust-section" data-reveal>
           <div class="container">
             <div class="section-heading trust-heading">
-              <span class="section-label">Safety & trust</span>
-              <h2>Clear structure. Safe coaching. Real club support.</h2>
+              <span class="section-label" data-i18n="trustLabel">Safety & trust</span>
+              <h2 data-i18n="trustTitle">Clear structure. Safe coaching. Real club support.</h2>
             </div>
 
             <div class="trust-grid">
-              <article class="trust-card">
+              <article class="trust-card" data-reveal>
                 <div class="trust-icon">✅</div>
-                <h3>Structured coaching</h3>
-                <p>Every session is built around technique, progression, and confidence — with clear goals for beginners and performance swimmers alike.</p>
+                <h3 data-i18n="trust1Title">Structured coaching</h3>
+                <p data-i18n="trust1Text">Every session is built around technique, progression, and confidence — with clear goals for beginners and performance swimmers alike.</p>
               </article>
 
-              <article class="trust-card">
+              <article class="trust-card" data-reveal>
                 <div class="trust-icon">🛡️</div>
-                <h3>Safe environment</h3>
-                <p>Our training culture is supervised, supportive, and built around responsible pool safety, communication, and athlete wellbeing.</p>
+                <h3 data-i18n="trust2Title">Safe environment</h3>
+                <p data-i18n="trust2Text">Our training culture is supervised, supportive, and built around responsible pool safety, communication, and athlete wellbeing.</p>
               </article>
 
-              <article class="trust-card">
+              <article class="trust-card" data-reveal>
                 <div class="trust-icon">📣</div>
-                <h3>Transparent communication</h3>
-                <p>Members get clear schedules, direct contact, and practical guidance before joining — no guesswork, no confusion.</p>
+                <h3 data-i18n="trust3Title">Transparent communication</h3>
+                <p data-i18n="trust3Text">Members get clear schedules, direct contact, and practical guidance before joining — no guesswork, no confusion.</p>
               </article>
 
-              <article class="trust-card highlight-card">
+              <article class="trust-card highlight-card" data-reveal>
                 <div class="trust-icon">🤝</div>
-                <h3>Trusted by families</h3>
-                <p>With more than <strong>450 active members</strong> and a <strong>95% retention rate</strong>, the club is built around long-term trust and community.</p>
+                <h3 data-i18n="trust4Title">Trusted by families</h3>
+                <p data-i18n="trust4Text">With more than 450 active members and a 95% retention rate, the club is built around long-term trust and community.</p>
               </article>
             </div>
           </div>
         </section>
 
-        <section id="programs" class="section programs">
+        <section id="programs" class="section programs" data-reveal>
           <div class="container">
             <div class="section-heading">
-              <span class="section-label">Programs</span>
-              <h2>Choose your lane.</h2>
+              <span class="section-label" data-i18n="programsLabel">Programs</span>
+              <h2 data-i18n="programsTitle">Choose your lane.</h2>
             </div>
 
             <div class="program-grid">
-              <article class="program-card feature-card">
+              <article class="program-card feature-card" data-reveal>
                 <div class="card-icon">🏊</div>
-                <h3>Junior Academy</h3>
-                <p>Fun, confident, and technique-led sessions for children learning to swim and progress fast.</p>
-                <ul>
+                <h3 data-i18n="programJunior">Junior Academy</h3>
+                <p data-i18n="programJuniorText">Fun, confident, and technique-led sessions for children learning to swim and progress fast.</p>
+                <ul data-i18n-list="programJuniorList">
                   <li>Age 5–12</li>
                   <li>Small groups</li>
                   <li>Skills + confidence</li>
                 </ul>
               </article>
 
-              <article class="program-card">
+              <article class="program-card" data-reveal>
                 <div class="card-icon">⚡</div>
-                <h3>Performance Squad</h3>
-                <p>For ambitious swimmers focused on race development, technique, and competition.</p>
-                <ul>
+                <h3 data-i18n="programPerformance">Performance Squad</h3>
+                <p data-i18n="programPerformanceText">For ambitious swimmers focused on race development, technique, and competition.</p>
+                <ul data-i18n-list="programPerformanceList">
                   <li>Technique blocks</li>
                   <li>Competition prep</li>
                   <li>High-performance culture</li>
                 </ul>
               </article>
 
-              <article class="program-card">
+              <article class="program-card" data-reveal>
                 <div class="card-icon">🌊</div>
-                <h3>Masters Swimming</h3>
-                <p>Structured sessions for adults who want stronger fitness, better form, and social energy.</p>
-                <ul>
+                <h3 data-i18n="programMasters">Masters Swimming</h3>
+                <p data-i18n="programMastersText">Structured sessions for adults who want stronger fitness, better form, and social energy.</p>
+                <ul data-i18n-list="programMastersList">
                   <li>Adult training</li>
                   <li>Endurance focus</li>
                   <li>Balanced pacing</li>
                 </ul>
               </article>
 
-              <article class="program-card">
+              <article class="program-card" data-reveal>
                 <div class="card-icon">🤝</div>
-                <h3>Open Water & Events</h3>
-                <p>Seasonal club events and open-water experiences that build confidence and community.</p>
-                <ul>
+                <h3 data-i18n="programEvents">Open Water & Events</h3>
+                <p data-i18n="programEventsText">Seasonal club events and open-water experiences that build confidence and community.</p>
+                <ul data-i18n-list="programEventsList">
                   <li>Club events</li>
                   <li>Team challenge days</li>
                   <li>Social training</li>
@@ -251,45 +256,45 @@
         <section id="schedule" class="section schedule">
           <div class="container schedule-wrap">
             <div class="schedule-copy">
-              <span class="section-label">Training schedule</span>
-              <h2>Train when it fits your rhythm.</h2>
-              <p>
+              <span class="section-label" data-i18n="scheduleLabel">Training schedule</span>
+              <h2 data-i18n="scheduleTitle">Train when it fits your rhythm.</h2>
+              <p data-i18n="scheduleText">
                 Flexible sessions across morning, midday, and evening windows to match school,
                 work, and recovery needs.
               </p>
-              <a href="#contact" class="button button-primary">Book a trial</a>
+              <a href="#contact" class="button button-primary" data-i18n="schedulePrimary">Book a trial</a>
             </div>
 
             <div class="schedule-grid" aria-label="Weekly training schedule">
               <div class="day-block">
-                <span>Monday</span>
+                <span data-i18n="monday">Monday</span>
                 <strong>6:00 AM</strong>
-                <small>Performance squad</small>
+                <small data-i18n="performanceSquad">Performance squad</small>
               </div>
               <div class="day-block">
-                <span>Tuesday</span>
+                <span data-i18n="tuesday">Tuesday</span>
                 <strong>5:30 PM</strong>
-                <small>Junior academy</small>
+                <small data-i18n="juniorAcademy">Junior academy</small>
               </div>
               <div class="day-block">
-                <span>Wednesday</span>
+                <span data-i18n="wednesday">Wednesday</span>
                 <strong>7:00 AM</strong>
-                <small>Masters endurance</small>
+                <small data-i18n="mastersEndurance">Masters endurance</small>
               </div>
               <div class="day-block">
-                <span>Thursday</span>
+                <span data-i18n="thursday">Thursday</span>
                 <strong>6:15 PM</strong>
-                <small>Technique clinic</small>
+                <small data-i18n="techniqueClinic">Technique clinic</small>
               </div>
               <div class="day-block">
-                <span>Friday</span>
+                <span data-i18n="friday">Friday</span>
                 <strong>5:30 PM</strong>
-                <small>Family swim</small>
+                <small data-i18n="familySwim">Family swim</small>
               </div>
               <div class="day-block accent-day">
-                <span>Saturday</span>
+                <span data-i18n="saturday">Saturday</span>
                 <strong>8:00 AM</strong>
-                <small>Club race prep</small>
+                <small data-i18n="clubRacePrep">Club race prep</small>
               </div>
             </div>
           </div>
@@ -298,8 +303,8 @@
         <section id="gallery" class="section gallery">
           <div class="container">
             <div class="section-heading">
-              <span class="section-label">Club life</span>
-              <h2>Real moments. Real momentum.</h2>
+              <span class="section-label" data-i18n="galleryLabel">Club life</span>
+              <h2 data-i18n="galleryTitle">Real moments. Real momentum.</h2>
             </div>
 
             <div class="gallery-grid">
@@ -314,22 +319,22 @@
         <section class="section testimonials">
           <div class="container">
             <div class="section-heading">
-              <span class="section-label">Member stories</span>
-              <h2>What swimmers love about the club.</h2>
+              <span class="section-label" data-i18n="storiesLabel">Member stories</span>
+              <h2 data-i18n="storiesTitle">What swimmers love about the club.</h2>
             </div>
 
             <div class="testimonial-grid">
               <blockquote>
-                “The coaching is exceptional, and the club culture makes every session feel motivating and welcoming.”
-                <footer>— Elena, Junior athlete</footer>
+                <span data-i18n="story1">“The coaching is exceptional, and the club culture makes every session feel motivating and welcoming.”</span>
+                <footer data-i18n="story1Author">— Elena, Junior athlete</footer>
               </blockquote>
               <blockquote>
-                “I joined for fitness and stayed for the energy. It feels like a team that genuinely supports everyone.”
-                <footer>— Martin, Masters swimmer</footer>
+                <span data-i18n="story2">“I joined for fitness and stayed for the energy. It feels like a team that genuinely supports everyone.”</span>
+                <footer data-i18n="story2Author">— Martin, Masters swimmer</footer>
               </blockquote>
               <blockquote>
-                “Our kids have more confidence, better technique, and they love training here.”
-                <footer>— Sofia, parent</footer>
+                <span data-i18n="story3">“Our kids have more confidence, better technique, and they love training here.”</span>
+                <footer data-i18n="story3Author">— Sofia, parent</footer>
               </blockquote>
             </div>
           </div>
@@ -338,12 +343,12 @@
         <section id="contact" class="section cta-section">
           <div class="container cta-box">
             <div>
-              <span class="section-label">Ready to begin?</span>
-              <h2>Make your next swim your strongest one.</h2>
+              <span class="section-label" data-i18n="ctaLabel">Ready to begin?</span>
+              <h2 data-i18n="ctaTitle">Make your next swim your strongest one.</h2>
             </div>
             <div class="cta-actions">
-              <a href="mailto:info@askoswimclubneusiedl.at" class="button button-primary">info@askoswimclubneusiedl.at</a>
-              <a href="tel:+436641234567" class="button button-secondary">+43 664 123 4567</a>
+              <a href="mailto:info@askoswimclubneusiedl.at" class="button button-primary" data-i18n="ctaEmail">info@askoswimclubneusiedl.at</a>
+              <a href="tel:+436641234567" class="button button-secondary" data-i18n="ctaPhone">+43 664 123 4567</a>
             </div>
           </div>
         </section>
@@ -360,10 +365,44 @@
               </span>
             </a>
           </div>
-          <p>© <span id="year"></span> ASKÖ Swimclub Neusiedl. Website by Loki Petter, Web Developer. Swim stronger together.</p>
+          <p data-i18n="footerText">© <span id="year"></span> ASKÖ Swimclub Neusiedl. Website by Loki Petter, Web Developer. Swim stronger together.</p>
         </div>
       </footer>
     </div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve the site experience and keep our club website running smoothly. By continuing, you agree to our use of cookies.</p>
+      <div class="cookie-actions">
+        <button type="button" class="cookie-btn" data-cookie-choice="essential">Essential only</button>
+        <button type="button" class="cookie-btn primary" data-cookie-choice="accept">Accept all</button>
+      </div>
+    </div>
+
+    <section class="brand-admin" aria-label="Club branding settings">
+      <div class="container brand-admin-inner">
+        <div>
+          <span class="section-label">Brand setup</span>
+          <h3>Customise your club identity</h3>
+        </div>
+
+        <form id="brand-settings-form" class="brand-settings-form" novalidate>
+          <label>
+            Club name
+            <input type="text" name="clubName" placeholder="ASKÖ" maxlength="24" />
+          </label>
+          <label>
+            Tagline
+            <input type="text" name="clubSubName" placeholder="Swimclub Neusiedl" maxlength="40" />
+          </label>
+          <label>
+            Logo URL
+            <input type="url" name="logoUrl" placeholder="https://example.com/logo.png" />
+          </label>
+          <button type="submit" class="button button-primary">Save brand</button>
+          <button type="button" class="button button-secondary" id="brand-reset-button">Reset to official</button>
+        </form>
+      </div>
+    </section>
 
     <script src="assets/js/script.js"></script>
   </body>
